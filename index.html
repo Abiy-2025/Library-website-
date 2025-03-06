@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranquilLibrary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <script type="importmap">
+        {
+            "imports": {
+                "smooth-scroll": "https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <rect width="30" height="5" rx="2.5" x="5" y="10" fill="#8a5cf7"/>
+                    <rect width="30" height="5" rx="2.5" x="5" y="18" fill="#8a5cf7"/>
+                    <rect width="20" height="5" rx="2.5" x="5" y="26" fill="#8a5cf7"/>
+                </svg>
+                <h1>TranquilLibrary</h1>
+            </div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Your <span>Discover. Read. Explore.</span> Sanctuary</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for books...">
+                    <button type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <button class="cta-button">Browse Books</button>
+            </div>
+            <div class="hero-image">
+                <svg width="400" height="300" viewBox="0 0 400 300">
+                    <rect width="80" height="250" rx="5" x="60" y="30" fill="#9b7ade"/>
+                    <rect width="70" height="230" rx="5" x="145" y="50" fill="#7a60cb"/>
+                    <rect width="90" height="200" rx="5" x="220" y="80" fill="#6a4fc9"/>
+                    <rect width="60" height="180" rx="5" x="315" y="100" fill="#5840b8"/>
+                    <!-- Books spine details -->
+                    <rect width="60" height="3" rx="1.5" x="70" y="50" fill="#ede7ff"/>
+                    <rect width="60" height="3" rx="1.5" x="70" y="70" fill="#ede7ff"/>
+                    <rect width="50" height="3" rx="1.5" x="155" y="70" fill="#ede7ff"/>
+                    <rect width="50" height="3" rx="1.5" x="155" y="90" fill="#ede7ff"/>
+                    <rect width="70" height="3" rx="1.5" x="230" y="100" fill="#ede7ff"/>
+                    <rect width="70" height="3" rx="1.5" x="230" y="120" fill="#ede7ff"/>
+                    <rect width="40" height="3" rx="1.5" x="325" y="120" fill="#ede7ff"/>
+                    <rect width="40" height="3" rx="1.5" x="325" y="140" fill="#ede7ff"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="books" class="books-section">
+            <h2>Featured Books</h2>
+            <div class="books-grid">
+                <!-- Books will be inserted here by JavaScript -->
+            </div>
+            <div class="filter-container">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="fiction">Fiction</button>
+                <button class="filter-button" data-filter="non-fiction">Non-Fiction</button>
+                <button class="filter-button" data-filter="mystery">Mystery</button>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Services will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Our Services</h2>
+                    <p>TranquilLibrary offers a wide range of services designed to enhance your reading experience. From premium memberships that give you unlimited access to our vast collection, to specialized services like book restoration and reading rooms.</p>
+                    <p>Our team of dedicated librarians and book experts are passionate about literature and committed to providing you with exceptional service. We believe that books have the power to transform lives, and we're here to help you discover your next favorite read.</p>
+                </div>
+                <div class="newsletter-form">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to receive updates on new arrivals, upcoming events, and special offers.</p>
+                    <form id="newsletterForm">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6a4fc9" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <p>123 Library Lane, Bookville</p>
+                    </div>
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6a4fc9" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                        </svg>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6a4fc9" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9a1aca5a5a689bdbba8a7b8bca0a5a5a0abbba8bbb0e7aaa6a4">[email&#160;protected]</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40">
+                    <rect width="30" height="5" rx="2.5" x="5" y="10" fill="#8a5cf7"/>
+                    <rect width="30" height="5" rx="2.5" x="5" y="18" fill="#8a5cf7"/>
+                    <rect width="20" height="5" rx="2.5" x="5" y="26" fill="#8a5cf7"/>
+                </svg>
+                <p>TranquilLibrary</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#books">Books</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8a5cf7" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8a5cf7" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8a5cf7" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TranquilLibrary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js" type="module"></script>
+</body>
+</html>
